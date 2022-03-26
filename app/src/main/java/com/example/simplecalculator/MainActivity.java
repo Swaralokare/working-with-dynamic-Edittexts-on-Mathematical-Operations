@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             EditText AddEdtTxt=new EditText(MainActivity.this);
-            AddEdtTxt.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+            AddEdtTxt.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT));
             AddEdtTxt.setTextSize(20);
             AddEdtTxt.setInputType(InputType.TYPE_CLASS_NUMBER);
             LinearLayoutInput.addView(AddEdtTxt);
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             for (int i=1; i<arrEditTexts.size(); i++) {
 
 
-                sum=sum * Double.parseDouble(arrEditTexts.get(0).getText().toString());
+                sum=sum * Double.parseDouble(arrEditTexts.get(i).getText().toString());
 
             }
 
